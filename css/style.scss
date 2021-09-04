@@ -1,0 +1,27 @@
+//ddsa
+
+//header simples 
+@import 'header';
+
+//section elaborado
+
+@import 'section'; 
+
+//media responsivo
+@import 'media';
+
+//
+@import 'variaveis';
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: $--body--background;
+}
+
+.container{
+    max-width: 768px;
+    margin: 0 $--margin-l-1;
+}

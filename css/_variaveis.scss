@@ -1,0 +1,26 @@
+
+
+//cor dinamica 
+$--hsl--color:111;
+
+/*HSL color mode */
+$--body--background: hsl($--hsl--color, 60%, 70%);
+$--main--background: hsl($--hsl--color, 40%, 20%);
+
+
+//MARGIN
+$--margin-l-1:1.5rem;
+
+
+section{
+    background: $--main--background;
+}
+/*
+margin: 0 0 var(--header-height) 0;
+font-family: var(--body-font);
+font-size: var(--normal-font-size);
+background-color: var(--body-color);
+color: var(--text-color);
+*/
+
+//

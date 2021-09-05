@@ -1,20 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
+$--header--height:3rem;
 
 //cor dinamica 
 $--hsl--color:111;
 
 /*HSL color mode */
-$--body--background: hsl($--hsl--color, 60%, 70%);
-$--main--background: hsl($--hsl--color, 40%, 20%);
+$--body--background: hsl($--hsl--color, 60%, 99%);
+$--main--background: hsl($--hsl--color, 60%, 70%);
+$--title--color:hsl($--hsl--color, 8%, 15%);
+$--text-color: hsl(var($--hsl--color), 8%, 45%);
+$--text-color-light: hsl(var($--hsl--color), 8%, 65%);
+
+/*========= FONTE WEIGHT =========*/
+$--body--font: 'Poppins', sans-serif;
 
 
-//MARGIN
+/*========= FONTE WEIGHT =========*/
+$--font-medium: 500;
+$--font-semi-bold: 600;
+
+/*========= MARING =========*/
 $--margin-l-1:1.5rem;
+$--mb--1-5: 1.5rem; 
 
+/*========= SHADOWN =========*/
+$--shadown--1: -6px -6px 6px #0000002d;
 
-section{
-    background: $--main--background;
-}
 /*
 margin: 0 0 var(--header-height) 0;
 font-family: var(--body-font);

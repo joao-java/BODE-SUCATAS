@@ -1,14 +1,124 @@
-header {
-  width: 100px;
-  height: 100px;
-  color: #fff;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+/*HSL color mode */
+/*========= FONTE WEIGHT =========*/
+/*========= FONTE WEIGHT =========*/
+/*========= MARING =========*/
+/*========= SHADOWN =========*/
+/*
+margin: 0 0 var(--header-height) 0;
+font-family: var(--body-font);
+font-size: var(--normal-font-size);
+background-color: var(--body-color);
+color: var(--text-color);
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+.grid {
+  display: -ms-grid;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--body-color);
+}
+
+.nav {
+  max-width: 968px;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__logo,
+.nav__toggle {
+  color: hsl(var(111), 8%, 45%);
+  font-weight: 500;
+}
+
+.nav__toggle {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.nav__toggle:hover {
+  color: var(--first-color);
+}
+
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: #fbfefb;
+    padding: 2rem 1.5rem 4rem;
+    -webkit-box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 1.5rem 1.5rem 0 0;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+}
+
+.nav__list {
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.nav__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__icon {
+  font-size: 1.2rem;
+}
+
+.nav__close {
+  position: absolute;
+  right: 1.3rem;
+  bottom: .5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--first-color);
+}
+
+.nav__close:hover {
+  color: var(--first-color);
+}
+
+/* show menu */
+.show-menu {
+  bottom: 0;
 }
 
 /*HSL color mode */
-section {
-  background: #25471f;
-}
-
+/*========= FONTE WEIGHT =========*/
+/*========= FONTE WEIGHT =========*/
+/*========= MARING =========*/
+/*========= SHADOWN =========*/
 /*
 margin: 0 0 var(--header-height) 0;
 font-family: var(--body-font);
@@ -17,12 +127,20 @@ background-color: var(--body-color);
 color: var(--text-color);
 */
 main {
+  -webkit-box-shadow: -6px -6px 6px #0000002d;
+          box-shadow: -6px -6px 6px #0000002d;
   border-top-right-radius: 2rem;
   border-top-left-radius: 2rem;
 }
 
 section {
-  background: #25471f;
+  padding: 2rem 4rem;
+}
+
+/*==================== LAYOUT ==================*/
+.container {
+  max-width: 768px;
+  margin: 0 1.5rem;
 }
 
 @media screen and (min-width: 968px) {
@@ -40,10 +158,10 @@ section {
 }
 
 /*HSL color mode */
-section {
-  background: #25471f;
-}
-
+/*========= FONTE WEIGHT =========*/
+/*========= FONTE WEIGHT =========*/
+/*========= MARING =========*/
+/*========= SHADOWN =========*/
 /*
 margin: 0 0 var(--header-height) 0;
 font-family: var(--body-font);
@@ -51,16 +169,38 @@ font-size: var(--normal-font-size);
 background-color: var(--body-color);
 color: var(--text-color);
 */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background: #92e085;
+  margin: 0 0 3rem 0;
+  background: #fbfefb;
+  font-family: "Poppins", sans-serif;
+  color: hsl(var(111), 8%, 45%);
 }
 
 .container {
   max-width: 768px;
   margin: 0 1.5rem;
+}
+
+h1, h2, h3, h4 {
+  color: #242923;
+  font-weight: 600;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 /*# sourceMappingURL=style.css.map */

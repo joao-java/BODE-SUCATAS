@@ -1,5 +1,8 @@
 //ddsa
 
+//Nav 
+@import 'nav';
+
 //header simples 
 @import 'header';
 
@@ -10,18 +13,39 @@
 //media responsivo
 @import 'media';
 
-//
+//Variaveis
 @import 'variaveis';
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
 
 html{
     scroll-behavior: smooth;
 }
 
 body{
+    margin: 0 0 $--header--height 0 ;
     background: $--body--background;
+    font-family: $--body--font;
+    color: $--text-color;
 }
 
 .container{
     max-width: 768px;
     margin: 0 $--margin-l-1;
+}
+
+h1, h2, h3, h4{
+    color: $--title--color;
+    font-weight: $--font-semi-bold;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
 }

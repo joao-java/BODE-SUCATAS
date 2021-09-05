@@ -1,13 +1,15 @@
 /*==================== MENU SHOW Y HIDDEN ====================*/
-const navMenu = document.getElementById("nav-menu"),
-    navToggle = document.getElementById("nav-toggle"),
-    navClose = document.getElementById("nav-close");
+const navMenu = document.getElementById("nav-menu"),navToggle = document.getElementById("nav-toggle"),
+navClose = document.getElementById("nav-close"),
+whatS = document.getElementById("whatsapp");
 
+console.log(whatS)
 /*===== MENU SHOW =====*/
 /* Validate if constant exists */
 if(navToggle){
     navToggle.addEventListener("click", ()=>{
-        navMenu.classList.add("show-menu")
+        navMenu.classList.add("show-menu");
+        whatS.style.bottom  = "16rem";
     })
 }
 
@@ -16,6 +18,7 @@ if(navToggle){
 if(navClose){
     navClose.addEventListener("click", () =>{
         navMenu.classList.remove("show-menu")
+        whatS.style.bottom = "3rem"
     })
 }
 

@@ -22,6 +22,7 @@ color: var(--text-color);
 .header {
   width: 100%;
   position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
   z-index: var(--z-fixed);
@@ -204,13 +205,15 @@ img {
   height: auto;
 }
 
-#whatsaap {
-  display: fixed;
+#whatsapp {
+  position: absolute;
+  bottom: 3rem;
   right: 1rem;
-  bottom: 1rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 #whatsapp img {
-  width: 10px;
+  width: 50px;
 }
 /*# sourceMappingURL=style.css.map */

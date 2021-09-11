@@ -2,9 +2,12 @@
 @import 'variaveis';
 
 main{
+    display: block;
+    margin-top: -2rem;
     box-shadow: $--shadown--1;
     border-top-right-radius: 2rem;
     border-top-left-radius: 2rem;
+    z-index: 1000;
 }
 
 section{

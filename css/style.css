@@ -4,6 +4,8 @@
 /*========= FONTE WEIGHT =========*/
 /*========= MARING =========*/
 /*========= SHADOWN =========*/
+/*========= INDEX =========*/
+/*========= ICONS =========*/
 /*
 margin: 0 0 var(--header-height) 0;
 font-family: var(--body-font);
@@ -24,8 +26,10 @@ color: var(--text-color);
   position: fixed;
   bottom: 0;
   left: 0;
-  z-index: var(--z-fixed);
-  background-color: var(--body-color);
+  z-index: 100;
+  background-color: #fbfefb;
+  -webkit-box-shadow: -6px -6px 6px #0000002d;
+          box-shadow: -6px -6px 6px #0000002d;
 }
 
 .nav {
@@ -71,6 +75,9 @@ color: var(--text-color);
     -webkit-transition: .3s;
     transition: .3s;
   }
+  .header {
+    border-radius: 1.5rem 1.5rem 0 0;
+  }
 }
 
 .nav__list {
@@ -114,25 +121,13 @@ color: var(--text-color);
   bottom: 0;
 }
 
-.banner {
-  height: 400px;
-}
-
-.banner .container__banner {
-  width: 100%;
-  height: 100%;
-  background-image: url("../IMG/banner.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 /*HSL color mode */
 /*========= FONTE WEIGHT =========*/
 /*========= FONTE WEIGHT =========*/
 /*========= MARING =========*/
 /*========= SHADOWN =========*/
+/*========= INDEX =========*/
+/*========= ICONS =========*/
 /*
 margin: 0 0 var(--header-height) 0;
 font-family: var(--body-font);
@@ -140,16 +135,6 @@ font-size: var(--normal-font-size);
 background-color: var(--body-color);
 color: var(--text-color);
 */
-main {
-  display: block;
-  margin-top: -2rem;
-  -webkit-box-shadow: -6px -6px 6px #0000002d;
-          box-shadow: -6px -6px 6px #0000002d;
-  border-top-right-radius: 2rem;
-  border-top-left-radius: 2rem;
-  z-index: 1000;
-}
-
 section {
   padding: 2rem 4rem;
   display: -webkit-box;
@@ -165,6 +150,7 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 /*==================== LAYOUT ==================*/
@@ -173,18 +159,21 @@ section {
   margin: 0 1.5rem;
 }
 
-@media screen and (min-width: 968px) {
-  :root {
-    /*
-        --big-font-size: 3rem;
-        --h1-font-size: 2.25rem;
-        --h2-font-size: 1.5rem;
-        --h3-font-size: 1.25rem;
-        --normal-font-size: 1rem;
-        --small-font-size: .875rem;
-        --smaller-font-size: .813rem;
-    */
-  }
+.aberto {
+  background: #fbfefb;
+  position: absolute;
+  top: -1.5rem;
+  border-radius: 25px;
+  -webkit-box-shadow: 1px 2px 4px #0000002d;
+          box-shadow: 1px 2px 4px #0000002d;
+  padding: 0.5rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.aberto .icons {
+  font-size: 75px;
 }
 
 /*HSL color mode */
@@ -192,6 +181,8 @@ section {
 /*========= FONTE WEIGHT =========*/
 /*========= MARING =========*/
 /*========= SHADOWN =========*/
+/*========= INDEX =========*/
+/*========= ICONS =========*/
 /*
 margin: 0 0 var(--header-height) 0;
 font-family: var(--body-font);

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 /*HSL color mode */
-/*========= FONTE WEIGHT =========*/
+/*========= FONTE FAMYLI =========*/
+/*========= FONTE SIZE =========*/
 /*========= FONTE WEIGHT =========*/
 /*========= MARING =========*/
 /*========= SHADOWN =========*/
@@ -27,7 +28,7 @@ color: var(--text-color);
   bottom: 0;
   left: 0;
   z-index: 100;
-  background-color: #fbfefb;
+  background-color: #fefbfb;
   -webkit-box-shadow: -6px -6px 6px #0000002d;
           box-shadow: -6px -6px 6px #0000002d;
 }
@@ -48,7 +49,7 @@ color: var(--text-color);
 
 .nav__logo,
 .nav__toggle {
-  color: hsl(var(111), 8%, 45%);
+  color: #e08588;
   font-weight: 500;
 }
 
@@ -67,7 +68,7 @@ color: var(--text-color);
     bottom: -100%;
     left: 0;
     width: 100%;
-    background-color: #fbfefb;
+    background-color: #fefbfb;
     padding: 2rem 1.5rem 4rem;
     -webkit-box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
             box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
@@ -121,8 +122,54 @@ color: var(--text-color);
   bottom: 0;
 }
 
+.banner .banner__img {
+  height: 500px;
+  background: #000;
+}
+
+.banner .banner__img img {
+  opacity: 0.7;
+  height: 100%;
+}
+
+.banner .banner__logo {
+  width: 250px;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner .banner__logo h1 {
+  color: #bb161b;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  text-shadow: 1px 2px 7px #fff;
+}
+
+.banner .banner__logo span {
+  color: #fff;
+  background: #bb161b;
+  letter-spacing: 3px;
+}
+
 /*HSL color mode */
-/*========= FONTE WEIGHT =========*/
+/*========= FONTE FAMYLI =========*/
+/*========= FONTE SIZE =========*/
 /*========= FONTE WEIGHT =========*/
 /*========= MARING =========*/
 /*========= SHADOWN =========*/
@@ -159,8 +206,8 @@ section {
   margin: 0 1.5rem;
 }
 
-.aberto {
-  background: #fbfefb;
+section .aberto {
+  background: #fefbfb;
   position: absolute;
   top: -1.5rem;
   border-radius: 25px;
@@ -172,12 +219,20 @@ section {
   display: flex;
 }
 
-.aberto .icons {
+section .aberto .icons {
   font-size: 75px;
 }
 
+section .map {
+  background: #000;
+  width: 100%;
+  margin: 1rem 0;
+  height: 500px;
+}
+
 /*HSL color mode */
-/*========= FONTE WEIGHT =========*/
+/*========= FONTE FAMYLI =========*/
+/*========= FONTE SIZE =========*/
 /*========= FONTE WEIGHT =========*/
 /*========= MARING =========*/
 /*========= SHADOWN =========*/
@@ -205,9 +260,8 @@ html {
 
 body {
   margin: 0 0 3rem 0;
-  background: #fbfefb;
+  background: #fefbfb;
   font-family: "Poppins", sans-serif;
-  color: hsl(var(111), 8%, 45%);
 }
 
 .container {
@@ -216,7 +270,6 @@ body {
 }
 
 h1, h2, h3, h4 {
-  color: #242923;
   font-weight: 600;
 }
 

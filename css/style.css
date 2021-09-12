@@ -4,6 +4,7 @@
 /*========= FONTE SIZE =========*/
 /*========= FONTE WEIGHT =========*/
 /*========= MARING =========*/
+/*========= PADDING =========*/
 /*========= SHADOWN =========*/
 /*========= INDEX =========*/
 /*========= ICONS =========*/
@@ -123,7 +124,7 @@ color: var(--text-color);
 }
 
 .banner .banner__img {
-  height: 500px;
+  height: 400px;
   background: #000;
 }
 
@@ -172,6 +173,7 @@ color: var(--text-color);
 /*========= FONTE SIZE =========*/
 /*========= FONTE WEIGHT =========*/
 /*========= MARING =========*/
+/*========= PADDING =========*/
 /*========= SHADOWN =========*/
 /*========= INDEX =========*/
 /*========= ICONS =========*/
@@ -200,6 +202,11 @@ section {
   position: relative;
 }
 
+.icons {
+  font-size: 2rem;
+  color: green;
+}
+
 /*==================== LAYOUT ==================*/
 .container {
   max-width: 768px;
@@ -219,15 +226,56 @@ section .aberto {
   display: flex;
 }
 
-section .aberto .icons {
-  font-size: 75px;
+section .aberto h2 {
+  padding: 4px;
+}
+
+section .aberto__descricao {
+  width: 100%;
+}
+
+section .aberto__descricao h3 {
+  margin-top: 1rem;
+}
+
+section .aberto__descricao li {
+  display: inline;
+  margin-right: 5px;
 }
 
 section .map {
-  background: #000;
   width: 100%;
   margin: 1rem 0;
-  height: 500px;
+  height: 350px;
+}
+
+section .section__servico {
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .section__servico .servico__descricao {
+  width: 50%;
+}
+
+section .section__servico .servico__descricao h2 {
+  position: absolute;
+  top: 2rem;
+  border-left: solid 3px #bb161b;
+  padding-left: 0.5rem;
+  color: #bb161b;
+}
+
+section .section__servico .servico__descricao span {
+  font-size: 2rem;
 }
 
 /*HSL color mode */
@@ -235,6 +283,7 @@ section .map {
 /*========= FONTE SIZE =========*/
 /*========= FONTE WEIGHT =========*/
 /*========= MARING =========*/
+/*========= PADDING =========*/
 /*========= SHADOWN =========*/
 /*========= INDEX =========*/
 /*========= ICONS =========*/

@@ -17,6 +17,7 @@ color: var(--text-color);
 */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 .grid {
   display: -ms-grid;
   display: grid;
@@ -83,8 +84,8 @@ color: var(--text-color);
 }
 
 .nav__list {
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
 }
 
@@ -99,10 +100,12 @@ color: var(--text-color);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #bb161b;
 }
 
 .nav__icon {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  color: #bb161b;
 }
 
 .nav__close {
@@ -111,7 +114,7 @@ color: var(--text-color);
   bottom: .5rem;
   font-size: 1.5rem;
   cursor: pointer;
-  color: var(--first-color);
+  color: #e08588;
 }
 
 .nav__close:hover {
@@ -186,6 +189,20 @@ color: var(--text-color);
 */
 section {
   padding: 2rem 4rem;
+}
+
+.icons {
+  font-size: 2rem;
+  color: green;
+}
+
+/*==================== LAYOUT ==================*/
+.container {
+  max-width: 768px;
+  margin: 0 1.5rem;
+}
+
+section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -200,17 +217,6 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-}
-
-.icons {
-  font-size: 2rem;
-  color: green;
-}
-
-/*==================== LAYOUT ==================*/
-.container {
-  max-width: 768px;
-  margin: 0 1.5rem;
 }
 
 section .aberto {
@@ -235,6 +241,7 @@ section .aberto__descricao {
 }
 
 section .aberto__descricao h3 {
+  font-size: 2rem;
   margin-top: 1rem;
 }
 
@@ -250,7 +257,6 @@ section .map {
 }
 
 section .section__servico {
-  width: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -278,6 +284,72 @@ section .section__servico .servico__descricao span {
   font-size: 2rem;
 }
 
+/*==================== LAYOUT ==================*/
+section .section__materiais h2 {
+  text-align: left;
+  border-left: solid 3px #bb161b;
+  padding-left: 0.5rem;
+  color: #bb161b;
+}
+
+section .section__materiais span {
+  display: block;
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
+}
+
+section .section__materiais ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+  background: #fff;
+  border-radius: 25px;
+  -webkit-box-shadow: 1px 2px 4px #0000002d;
+          box-shadow: 1px 2px 4px #0000002d;
+  cursor: pointer;
+}
+
+section .section__materiais ul:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+section .section__materiais ul .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 50px;
+}
+
+section .section__materiais ul .title h4 {
+  padding: 0 0 0 7px;
+}
+
+section .section__materiais ul li {
+  margin-left: 1rem;
+  padding: 10px;
+}
+
+/*HSL color mode */
+/*========= FONTE FAMYLI =========*/
+/*========= FONTE SIZE =========*/
+/*========= FONTE WEIGHT =========*/
+/*========= MARING =========*/
+/*========= PADDING =========*/
+/*========= SHADOWN =========*/
+/*========= INDEX =========*/
+/*========= ICONS =========*/
+/*
+margin: 0 0 var(--header-height) 0;
+font-family: var(--body-font);
+font-size: var(--normal-font-size);
+background-color: var(--body-color);
+color: var(--text-color);
+*/
 /*HSL color mode */
 /*========= FONTE FAMYLI =========*/
 /*========= FONTE SIZE =========*/

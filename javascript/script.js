@@ -9,7 +9,7 @@ console.log(whatS)
 if(navToggle){
     navToggle.addEventListener("click", ()=>{
         navMenu.classList.add("show-menu");
-        whatS.style.bottom  = "16rem";
+        whatS.style.bottom  = "10rem";
     })
 }
 

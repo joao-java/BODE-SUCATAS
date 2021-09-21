@@ -32,14 +32,12 @@ navLink.forEach( i => i.addEventListener("click", linkAction))
 
 //navLink.forEach(navLink, [i])
 
-let tempoAtual = new Date(); 
-let horaAtual = tempoAtual.getHours; 
-let diaAtual = tempoAtual.getDay();
+let horaAtual = new Date().getHours(), diaAtual = new Date().getDay();
 const aberto = document.querySelector(".aberto")
 
 function Eaberto(){
     if(diaAtual > 0 && diaAtual < 6){
-        if(horaAtual >= 8 && horaAtual <= 17){
+        if(horaAtual >= 7 && horaAtual <= 17){
             return aberto.innerHTML = `<h2>Aberto</h2> <i class="uit uit-check icons"></i>`
         }
     }else if(diaAtual === 6){

@@ -196,6 +196,11 @@ section {
   color: green;
 }
 
+.close {
+  font-size: 2rem;
+  color: red;
+}
+
 /*==================== LAYOUT ==================*/
 .container {
   max-width: 768px;

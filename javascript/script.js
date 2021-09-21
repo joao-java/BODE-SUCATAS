@@ -3,7 +3,6 @@ const navMenu = document.getElementById("nav-menu"),navToggle = document.getElem
 navClose = document.getElementById("nav-close"),
 whatS = document.getElementById("whatsapp");
 
-console.log(whatS)
 /*===== MENU SHOW =====*/
 /* Validate if constant exists */
 if(navToggle){
@@ -32,3 +31,21 @@ function linkAction(){
 navLink.forEach( i => i.addEventListener("click", linkAction))
 
 //navLink.forEach(navLink, [i])
+
+let tempoAtual = new Date(); 
+let horaAtual = tempoAtual.getHours; 
+let diaAtual = tempoAtual.getDay();
+const aberto = document.querySelector(".aberto")
+
+function Eaberto(){
+    if(diaAtual > 0 && diaAtual < 6){
+        if(horaAtual >= 8 && horaAtual <= 17){
+            return aberto.innerHTML = `<h2>Aberto</h2> <i class="uit uit-check icons"></i>`
+        }
+    }else if(diaAtual === 6){
+        if(horaAtual >= 8 && horaAtual <= 12){
+            return aberto.innerHTML = `<h2>Aberto</h2> <i class="uit uit-check icons"></i>`
+        }
+    }
+}
+Eaberto();

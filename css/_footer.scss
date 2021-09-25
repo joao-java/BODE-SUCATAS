@@ -1,3 +1,35 @@
 @import 'variaveis';
 
 
+footer{
+    .footer{
+        .section__contato{
+            background: $--Contato--background;
+            width: 100%;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h4{
+                text-align: justify;
+            }
+            div{
+                margin-bottom: 1rem;
+                a{
+                    display: block;
+                    color: aliceblue;
+                }
+            }
+        }
+        .footer__rodape{
+            color: $--body--background;
+            background: $--footer--background;
+            padding: 0.5rem 1rem;
+            display: flex;
+            justify-content: space-between;
+            div{
+                padding: 0 3rem;
+            }
+        }
+    }
+}

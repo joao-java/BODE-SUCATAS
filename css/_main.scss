@@ -8,7 +8,9 @@ section{
     padding: 2rem 4rem;
 
 }
-
+.icons__left{
+    margin: 0 1rem;
+}
 .icons{
     font-size: $--font--size-2;
     color: green;
@@ -59,13 +61,34 @@ section{
         width: 100%;
         margin: 1rem 0;
         height: 350px;
+        h1{
+            border-left: solid 3px $--logo--color;
+            padding-left: $--padding--1;
+            color: $--logo--color;
+            margin-bottom: 1rem;
+        }
+        .map__rota{
+            margin: 3rem;
+            text-align: center;
+            a{
+                box-shadow: 0px 2px 1px #00000031;
+                color: rgb(49, 47, 47);
+                padding: 1rem 2rem;
+                border-radius: 15px;
+            }
+        }
+        .section__localizacao{
+            margin-top: 2rem;
+            border: solid 1px #00000031;
+            border-radius: 10px;
+        }
     }   
 }
 
 section{
     .section__servico{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         .servico__descricao{
             width: 50%;
@@ -88,9 +111,7 @@ section{
 section{
     .section__materiais{
         h2{
-            text-align:left;
             border-left: solid 3px $--logo--color;
-            padding-left: $--padding--1;
             color: $--logo--color;
         }
         span{
@@ -101,8 +122,8 @@ section{
         ul{
             display: flex;
             margin-bottom: 1rem;
-            background: #fff;
-            border-radius: 25px;
+            background: $--body--background;
+            border-radius: 15px;
             box-shadow: $--shadown--2;
             cursor: pointer;
             &:hover{
@@ -117,6 +138,7 @@ section{
                 }
             }
             li{
+                font-size: 0.8rem;
                 margin-left: 1rem;
                 padding: 10px;
             }

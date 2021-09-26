@@ -17,7 +17,7 @@ if(navToggle){
 if(navClose){
     navClose.addEventListener("click", () =>{
         navMenu.classList.remove("show-menu")
-        whatS.style.bottom = "3rem"
+        whatS.style.bottom = "3.5rem"
     })
 }
 
@@ -27,6 +27,7 @@ const navLink = document.querySelectorAll(".nav__link")
 function linkAction(){
     const navMenu = document.getElementById("nav-menu")
     navMenu.classList.remove("show-menu")
+    whatS.style.bottom = "3.5rem"
 }
 navLink.forEach( i => i.addEventListener("click", linkAction))
 

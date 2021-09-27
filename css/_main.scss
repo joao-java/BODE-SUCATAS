@@ -11,6 +11,9 @@ section{
 .icons__left{
     margin: 0 1rem;
 }
+.cons__padd{
+    padding-right: 1rem;
+}
 .icons{
     font-size: $--font--size-2;
     color: green;
@@ -24,6 +27,7 @@ section{
     max-width: 768px ;
     margin: 0 $--mb--1-5;
 }
+/*==================== ABERTO ==================*/
 
 section{ 
     display: flex;
@@ -55,6 +59,9 @@ section{
         }
     }
 }
+
+/*==================== MAP ==================*/
+
 section{
 
     .map{
@@ -68,10 +75,11 @@ section{
             margin-bottom: 1rem;
         }
         .map__rota{
-            margin: 3rem;
+            margin: 2rem;
             text-align: center;
             a{
-                box-shadow: 0px 2px 1px #00000031;
+                display:inline-block;
+                box-shadow: 0px 3px 1px #00000031;
                 color: rgb(49, 47, 47);
                 padding: 1rem 2rem;
                 border-radius: 15px;
@@ -84,6 +92,8 @@ section{
         }
     }   
 }
+
+/*==================== SERVIÇO ==================*/
 
 section{
     .section__servico{
@@ -106,11 +116,12 @@ section{
     }
 }
 
-/*==================== LAYOUT ==================*/
+/*==================== MATERIAIS ==================*/
 
 section{
     .section__materiais{
         h2{
+            padding-left: $--padding--1;
             border-left: solid 3px $--logo--color;
             color: $--logo--color;
         }
@@ -123,12 +134,9 @@ section{
             display: flex;
             margin-bottom: 1rem;
             background: $--body--background;
-            border-radius: 15px;
-            box-shadow: $--shadown--2;
+            border-radius: 7px;
+            border: solid 1px #00000017;
             cursor: pointer;
-            &:hover{
-                transform: scale(1.1);
-            }
             .title{
                 display: flex;
                 align-items: center;
